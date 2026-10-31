@@ -123,9 +123,8 @@ The database seeder pre-populates three test users with different roles and tier
 
 | Role | Name | Email | Password | Access Level |
 |---|---|---|---|---|
-| **Administrator** | Admin Operator | `admin@bookplatform.et` | `password` | Full Admin Dashboard (`/admin`), Book & Category CRUD, Revenue Reports |
-| **Premium Reader** | Sara Haile | `premium@bookplatform.et` | `password` | Full Library, PDF Reader, Streaks, Analytics (`/premium/analytics`), Reading Plans |
-| **Free Reader** | Abebe Bikila | `reader@bookplatform.et` | `password` | Standard Library, Catalog, Reader, Streaks, Simulated Upgrade Flow |
+| **Administrator** | Admin Operator | `admin@bookplatform.et` | `********` | Full Admin Dashboard (`/admin`), Book & Category CRUD, Revenue Reports |
+
 
 ---
 
