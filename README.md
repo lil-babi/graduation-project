@@ -1,3 +1,27 @@
+# BookPlatform
+
+> Read today, lead tomorrow.
+
+A modern web application for reading, tracking reading habits, managing personal libraries, quotes, reviews, and reading streaks.
+
+---
+
+## Platform Demo Video
+
+A walkthrough video demonstrating user entry and primary platform use cases is available in the repository:
+
+- **Path:** [`video/Screencast From 2026-10-31 15-14-11.webm`](video/Screencast%20From%202026-10-31%2015-14-11.webm)
+- **Format:** WebM (1080p, ~5 minutes)
+- **Overview:** Demonstrates the entry flow (authentication, dashboard navigation) and primary use cases of the platform:
+  - Exploring and discovering books
+  - In-browser PDF reading experience
+  - Personal library management (reading status, bookmarks, and lists)
+  - Daily reading progress logging, goals, and streak tracking
+  - Book reviews, ratings, and favorite quotes
+  - Simulated premium subscription checkout and advanced reading analytics
+
+---
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
