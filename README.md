@@ -1,82 +1,144 @@
-# BookPlatform
+# 📚 BookPlatform
 
-> Read today, lead tomorrow.
+> *"Read today, lead tomorrow."*
 
-A modern web application for reading, tracking reading habits, managing personal libraries, quotes, reviews, and reading streaks.
+**BookPlatform** is a modern, full-featured web application designed to empower avid readers, lifelong learners, and book communities. Built with Laravel and Tailwind CSS, the platform combines digital reading with habit-tracking tools—helping users cultivate consistent reading habits, manage curated libraries, highlight memorable quotes, and track reading velocity over time.
 
 ---
 
-## Platform Demo Video
+## 🎬 Platform Demo Video
 
-A walkthrough video demonstrating user entry and primary platform use cases is available in the repository:
+A walkthrough demonstration video showcasing platform onboarding, navigation, and core user workflows is included directly in the repository:
 
-- **Path:** [`video/Screencast From 2026-10-31 15-14-11.webm`](video/Screencast%20From%202026-10-31%2015-14-11.webm)
+- **File Path:** [`video/Screencast From 2026-10-31 15-14-11.webm`](video/Screencast%20From%202026-10-31%2015-14-11.webm)
 - **Format:** WebM (1080p, ~5 minutes)
-- **Overview:** Demonstrates the entry flow (authentication, dashboard navigation) and primary use cases of the platform:
-  - Exploring and discovering books
-  - In-browser PDF reading experience
-  - Personal library management (reading status, bookmarks, and lists)
-  - Daily reading progress logging, goals, and streak tracking
-  - Book reviews, ratings, and favorite quotes
-  - Simulated premium subscription checkout and advanced reading analytics
+- **Walkthrough Highlights:**
+  - **User Entry Flow:** Account registration, role-based authentication, and personalized dashboard overview.
+  - **Book Discovery & Reading:** Searching and filtering by categories, book detail pages, and the in-browser PDF reader.
+  - **Personal Library Management:** Shelving books as *Want to Read*, *Currently Reading*, and *Completed*.
+  - **Habit Formation & Streaks:** Logging daily read pages, maintaining daily reading streaks, and setting reading goals.
+  - **Community & Social Insights:** Submitting book reviews, rating books, and curating favorite quotes.
+  - **Monetization & Analytics:** Simulated checkout for Premium subscriptions, unlocking reading velocity charts and customized reading plans.
 
 ---
 
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+## ✨ Key Features
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+### 📖 1. Discovery & In-Browser PDF Reader
+- Categorized catalog of classic literature and non-fiction works across Self-Development, Philosophy, Psychology, Finance, Business, and History.
+- Integrated, distraction-free in-browser PDF reader with automatic progress synchronization.
 
-## About Laravel
+### 📚 2. Personal Library & Bookshelves
+- Organize your reading journey with status categories: *Want to Read*, *Currently Reading*, and *Completed*.
+- Direct quick-actions to log pages read or jump straight back into reading where you left off.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### 🔥 3. Reading Habits, Goals & Streaks
+- Set daily reading targets (e.g. 20 pages/day).
+- Daily reading streaks system that rewards consistent daily engagement and flags broken streaks when a day is skipped.
+- Visual reading activity timeline and calendar tracking.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### 💬 4. Community Reviews & Quotes
+- Write and publish detailed book reviews with star ratings.
+- Collect, favorite, and share inspiring book quotes.
+- Strict authorization policies ensuring users can only edit or remove their own content.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 👑 5. Premium Tier & Advanced Analytics
+- **Reading Analytics:** Track reading speed, pages consumed over time, and category breakdowns.
+- **Custom Reading Plans:** Create structured multi-day reading roadmaps.
+- **Simulated Payment Gateway:** Full checkout flow for subscriptions without requiring real credit cards.
 
-## Learning Laravel
+### 🛡️ 6. Administration & Reporting Dashboard
+- Dedicated administrative portal (`/admin`) restricted to admin operators.
+- Complete CRUD operations for books and genre categories.
+- User management and platform revenue reporting with clear free vs. premium subscriber segregation.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+---
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 🛠️ Technology Stack
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+- **Backend:** [Laravel 12](https://laravel.com) (PHP 8.3+)
+- **Database:** SQLite (default) / MySQL / PostgreSQL
+- **Frontend:** Blade Templates, [Tailwind CSS v4](https://tailwindcss.com), [Vite](https://vite.dev)
+- **Testing:** PHPUnit (acceptance test suite covering all core requirements)
+- **PDF Generation & Storage:** Local / Public disk storage with dynamic PDF generation services
 
-## Agentic Development
+---
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+## 🚀 Getting Started
 
+Follow these steps to set up BookPlatform locally on your system:
+
+### Prerequisites
+- **PHP** >= 8.3 with SQLite, PDO, and Mbstring extensions
+- **Composer** >= 2.0
+- **Node.js** >= 18.x & **npm**
+
+### 1. Clone & Navigate to Repository
 ```bash
-composer require laravel/boost --dev
-
-php artisan boost:install
+git clone https://github.com/lil-babi/graduation-project.git book-platform
+cd book-platform
 ```
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+### 2. Install Dependencies
+```bash
+composer install
+npm install
+```
 
-## Contributing
+### 3. Environment Configuration
+```bash
+cp .env.example .env
+php artisan key:generate
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### 4. Database Setup & Seeding
+Prepare the database and seed initial categories, complete books, and demo accounts:
+```bash
+touch database/database.sqlite
+php artisan migrate --seed
+php artisan storage:link
+```
 
-## Code of Conduct
+### 5. Build Frontend Assets
+For local development:
+```bash
+npm run dev
+```
+Or build production assets:
+```bash
+npm run build
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### 6. Start the Local Server
+```bash
+php artisan serve
+```
+Visit the application at: `http://127.0.0.1:8000`
 
-## Security Vulnerabilities
+---
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## 👥 Seeded Demo Accounts
 
-## License
+The database seeder pre-populates three test users with different roles and tiers (all using the password `password`):
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+| Role | Name | Email | Password | Access Level |
+|---|---|---|---|---|
+| **Administrator** | Admin Operator | `admin@bookplatform.et` | `password` | Full Admin Dashboard (`/admin`), Book & Category CRUD, Revenue Reports |
+| **Premium Reader** | Sara Haile | `premium@bookplatform.et` | `password` | Full Library, PDF Reader, Streaks, Analytics (`/premium/analytics`), Reading Plans |
+| **Free Reader** | Abebe Bikila | `reader@bookplatform.et` | `password` | Standard Library, Catalog, Reader, Streaks, Simulated Upgrade Flow |
+
+---
+
+## 🧪 Testing
+
+The platform features an automated acceptance test suite verifying authentication, access control boundaries, duplicate prevention, streak calculations, file uploads, and simulated billing:
+
+```bash
+php artisan test tests/Feature/BookPlatformTest.php
+```
+
+---
+
+## 📄 License
+
+The platform is open-sourced under the [MIT License](https://opensource.org/licenses/MIT).
